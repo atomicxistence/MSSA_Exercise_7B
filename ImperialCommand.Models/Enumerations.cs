@@ -2,8 +2,9 @@ namespace ImperialCommand.Models
 {
     public enum WeaponType
     {
-        Ranged,
+        Rifle,
+        Pistol,
+        Explosive,
         Mounted,
-        Melee,
     }
 }
