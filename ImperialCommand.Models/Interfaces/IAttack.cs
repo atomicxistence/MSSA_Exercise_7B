@@ -2,8 +2,7 @@ namespace ImperialCommand.Models
 {
     public interface IAttack
     {
-        public int DamageAmount { get;}
-
+        public int Health { get;}
         public void Attack(ITarget target);
     }
 }
