@@ -4,7 +4,6 @@ namespace ImperialCommand.Models
     {
         Rifle,
         Pistol,
-        Explosive,
         Mounted,
     }
 }

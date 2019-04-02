@@ -10,7 +10,7 @@ namespace ImperialCommand.Models
 
         public virtual void Move()
         {
-            throw new System.NotImplementedException();
+            //TODO: add some sort of move method?
         }
 
         public virtual void Attack(ITarget target)
