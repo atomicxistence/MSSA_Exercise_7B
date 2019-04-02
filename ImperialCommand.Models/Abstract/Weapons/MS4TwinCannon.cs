@@ -1,18 +1,15 @@
-using System.Timers;
-
 namespace ImperialCommand.Models
 {
-    public class IonCannon : IWeapon
+    public class MS4TwinCannon : IWeapon
     {
-        private int rateOfFire = 5;
+        private int rateOfFire = 2;
         private bool readyFire = true;
         private Timer fireTimer;
 
-        public bool ReadyToFire { get; private set;}
         public WeaponType Type => WeaponType.Mounted;
-        public int DamageAmount => 30;
+        public int DamageAmount => 15;
 
-        public IonCannon()
+        public MS4TwinCannon()
         {
             fireTimer = new Timer(rateOfFire * 1000);
             fireTimer.AutoReset(false);
@@ -28,7 +25,7 @@ namespace ImperialCommand.Models
 
         public void Reload()
         {
-           fireTimer.Start();
+            fireTimer.Start();
         }
     }
 }
