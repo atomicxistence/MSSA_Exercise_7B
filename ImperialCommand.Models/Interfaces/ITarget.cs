@@ -2,7 +2,7 @@ namespace ImperialCommand.Models
 {
     public interface ITarget
     {
-        public int Defense { get;}
-        public void TakeDamage(int damageAmount);
+        int Defense { get;}
+        void TakeDamage(int damageAmount);
     }
 }

@@ -2,10 +2,10 @@ namespace ImperialCommand.Models
 {
     public interface IVehicle
     {
-        public IWeapon Weapon { get; }
-        public int Speed { get; }
-        public bool IsOperable { get; }
+        IWeapon Weapon { get; }
+        int Speed { get; }
+        bool IsOperable { get; }
 
-        public void Move();
+        void Move();
     }
 }

@@ -5,7 +5,6 @@ namespace ImperialCommand.Models
     public class IonCannon : IWeapon
     {
         private int rateOfFire = 5;
-        private bool readyFire = true;
         private Timer fireTimer;
 
         public bool ReadyToFire { get; private set;}
@@ -15,8 +14,8 @@ namespace ImperialCommand.Models
         public IonCannon()
         {
             fireTimer = new Timer(rateOfFire * 1000);
-            fireTimer.AutoReset(false);
-            fireTimer.Elapsed += () => ReadyToFire = true;
+            fireTimer.AutoReset = false;
+            fireTimer.Elapsed += (sender, args) => ReadyToFire = true;
             Reload();
         }
 

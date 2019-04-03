@@ -6,9 +6,9 @@ namespace ImperialCommand.Models
     {
         public StormTrooper()
         {
-            Weapon = new E11();
-            Health = 60;
-            Defense = 2;
+            this.Weapon = new E11();
+            this.Health = 60;
+            this.Defense = 2;
         }
     }
 }

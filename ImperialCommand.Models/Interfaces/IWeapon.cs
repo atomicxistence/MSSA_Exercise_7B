@@ -2,10 +2,10 @@ namespace ImperialCommand.Models
 {
     public interface IWeapon
     {
-        public WeaponType Type { get;}
-        public int DamageAmount { get;}
+        WeaponType Type { get;}
+        int DamageAmount { get;}
 
-        public void Fire();
-        public void Reload();
+        void Fire();
+        void Reload();
     }
 }

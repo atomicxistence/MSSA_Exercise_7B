@@ -1,11 +1,13 @@
+using System;
+
 namespace ImperialCommand.Models
 {
     public abstract class Trooper : IPersonnel, IAttack, ITarget
     {
-        public IWeapon Weapon { get;}
-        public bool IsAlive { get { Health > 0;} }
-        public int Health { get;}
-        public int Defense { get;}
+        public IWeapon Weapon { get; protected set;}
+        public bool IsAlive => Health > 0;
+        public int Health { get; protected set;}
+        public int Defense { get; protected set;}
 
         public virtual void Attack(ITarget target)
         {

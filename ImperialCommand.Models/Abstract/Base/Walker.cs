@@ -1,12 +1,14 @@
+using System;
+
 namespace ImperialCommand.Models
 {
-    public virtual class Walker : IVehicle, IAttack, ITarget
+    public abstract class Walker : IVehicle, IAttack, ITarget
     {
-        public IWeapon Weapon { get; }
-        public int Speed { get; }
-        public bool IsOperable { get{ Health > 0;} }
-        public int Health { get; }
-        public int Defense { get; }
+        public IWeapon Weapon { get; protected set;}
+        public int Speed { get; protected set;}
+        public bool IsOperable => Health > 0;
+        public int Health { get; protected set;}
+        public int Defense { get; protected set;}
 
         public virtual void Move()
         {

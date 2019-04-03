@@ -4,10 +4,10 @@ namespace ImperialCommand.Models
     {
         public ATST()
         {
-            Speed = 10;
-            Defense = 25;
-            Health = 100;
-            Weapon = new MS4TwinCannon();
+            this.Speed = 10;
+            this.Defense = 25;
+            this.Health = 100;
+            this.Weapon = new MS4TwinCannon();
         }
     }
 }

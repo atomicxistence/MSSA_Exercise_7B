@@ -4,9 +4,9 @@ namespace ImperialCommand.Models
     {
         public ScoutTrooper()
         {
-            Weapon = new DL44();
-            Health = 50;
-            Defense = 1;
+            this.Weapon = new DL44();
+            this.Health = 50;
+            this.Defense = 1;
         }
     }
 }

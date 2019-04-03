@@ -4,10 +4,10 @@ namespace ImperialCommand.Models
     {
         public ATAT()
         {
-            Speed = 5;
-            Defense = 50;
-            Health = 150;
-            Weapon = new IonCannon();
+            this.Speed = 5;
+            this.Defense = 50;
+            this.Health = 150;
+            this.Weapon = new IonCannon();
         }
     }
 }
