@@ -3,4 +3,6 @@
 
 > Create a military unit using inheritance
 
-For this project I decided to use interfaces to define the military unit objects as I already used abstract classes and virtual methods in the previous exercises. I also opted to use a Star Wars theme.
+For this project I decided to use interfaces along with abstract classes to define the military unit objects.
+
+*Imperial March Theme*
