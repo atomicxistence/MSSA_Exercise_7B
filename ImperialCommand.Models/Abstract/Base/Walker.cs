@@ -4,15 +4,17 @@ namespace ImperialCommand.Models
 {
     public abstract class Walker : IVehicle, IAttack, ITarget
     {
+        private int velocity;
+
         public IWeapon Weapon { get; protected set;}
         public int Speed { get; protected set;}
         public bool IsOperable => Health > 0;
         public int Health { get; protected set;}
         public int Defense { get; protected set;}
 
-        public virtual void Move()
+        public virtual void Move(Direction direction)
         {
-            //TODO: add some sort of move method?
+            velocity = (int)direction * Speed;
         }
 
         public virtual void Attack(ITarget target)

@@ -6,6 +6,6 @@ namespace ImperialCommand.Models
         int Speed { get; }
         bool IsOperable { get; }
 
-        void Move();
+        void Move(Direction direction);
     }
 }

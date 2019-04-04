@@ -6,4 +6,12 @@ namespace ImperialCommand.Models
         Pistol,
         Mounted,
     }
+
+    public enum Direction
+    {
+        North,
+        West,
+        South,
+        East,
+    }
 }
